@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>StudyHub Pro</title><link rel="stylesheet" href="style.css"></head><body>
+<header><b>Study<span>Hub</span> <small>PRO</small></b><nav><a href="#courses">Courses</a><a href="#notes">Notes</a><a href="#classes">Classes</a><a href="#tests">Tests</a><a href="#dashboard">Dashboard</a><button onclick="openLogin()">Login</button></nav></header>
+<section class="hero"><div><label>SMART LEARNING PLATFORM</label><h1>Learn. Practice.<br><em>Achieve.</em></h1><p>Notes, online classes, tests and progress tracking powered by Node.js + MySQL.</p><button class="primary" onclick="document.querySelector('#courses').scrollIntoView()">Explore Courses</button></div><div class="stats"><div><b>12+</b><span>Courses</span></div><div><b>500+</b><span>Notes</span></div><div><b>100+</b><span>Tests</span></div><div><b>24/7</b><span>Learning</span></div></div></section>
+<section id="courses"><h2>Popular Courses</h2><div id="coursesList" class="grid"></div></section>
+<section id="notes"><h2>Notes Library</h2><input id="search" placeholder="Search notes..." oninput="loadNotes()"><div id="notesList" class="grid"></div></section>
+<section id="classes"><h2>Online Classes</h2><div id="classesList" class="grid"></div></section>
+<section id="tests"><h2>Online Tests</h2><div id="testsList" class="grid"></div></section>
+<section id="dashboard"><h2>Student Dashboard</h2><div class="dash"><div><h3 id="welcome">Guest Student</h3><p>Login to view your results.</p><button onclick="openLogin()">Login / Register</button></div><div><h3>My Results</h3><div id="results">No results yet.</div></div></div></section>
+<footer>© 2026 StudyHub Pro • Node.js + MySQL</footer>
+<div id="modal" class="modal"><div class="box"><button class="x" onclick="closeModal()">×</button><div id="modalBody"></div></div></div><div id="toast"></div>
+<script src="app.js"></script></body></html>
